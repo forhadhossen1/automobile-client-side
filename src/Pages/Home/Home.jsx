@@ -1,6 +1,10 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../Components/Banner";
 import BrandCard from "../../Components/BrandCard";
+import Footer from "../../Components/Footer";
+import OurInfo from "../../Components/OurInfo";
+import Map from "../../Components/Map";
+import OurSatisfaction from "../../Components/OurSatisfaction";
 
 const Home = () => {
 
@@ -9,7 +13,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <div>
+            <div className="my-12">
                 <h2 className="text-4xl font-bold text-center py-12">Populer Cars From The Brands <br /> You Love</h2>
 
                 <div className=" md:container md:mx-auto grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -18,6 +22,10 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <OurInfo></OurInfo>
+            <Map></Map>
+            <OurSatisfaction></OurSatisfaction>
+            <Footer></Footer>
         </div>
     );
 };
