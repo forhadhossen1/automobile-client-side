@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = () => {
   return (
       <div className="carousel w-full">
-        <div id="slide1" className="h-[400px] lg:h-[700px] carousel-item relative w-full">
+        <div id="slide1" className="h-[400px] lg:h-[600px] carousel-item relative w-full">
           <div className="hero" style={{ backgroundImage: 'url(https://i.ibb.co/YQZ9W3N/banner-car3.jpg)' }}>
             <div className="hero-overlay bg-opacity-30"></div>
             <div className="hero-content text-center text-neutral-content">

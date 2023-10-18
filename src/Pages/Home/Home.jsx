@@ -6,6 +6,7 @@ import OurInfo from "../../Components/OurInfo";
 import Map from "../../Components/Map";
 import OurSatisfaction from "../../Components/OurSatisfaction";
 import Service from "../../Components/Service";
+import Compare from "../../Components/Compare";
 
 const Home = () => {
 
@@ -23,9 +24,10 @@ const Home = () => {
                     }
                 </div>
             </div>
+            <Compare></Compare>
             <OurInfo></OurInfo>
-            <Map></Map>
             <OurSatisfaction></OurSatisfaction>
+            <Map></Map>
             <Service></Service>
             <Footer></Footer>
         </div>
