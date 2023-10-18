@@ -5,6 +5,7 @@ import Footer from "../../Components/Footer";
 import OurInfo from "../../Components/OurInfo";
 import Map from "../../Components/Map";
 import OurSatisfaction from "../../Components/OurSatisfaction";
+import Service from "../../Components/Service";
 
 const Home = () => {
 
@@ -25,6 +26,7 @@ const Home = () => {
             <OurInfo></OurInfo>
             <Map></Map>
             <OurSatisfaction></OurSatisfaction>
+            <Service></Service>
             <Footer></Footer>
         </div>
     );
