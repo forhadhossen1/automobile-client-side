@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/pd5NLT1/bmw.png",
+      "brand_name": "B M W"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/kX03L4f/volks.png",
+      "brand_name": "Volkswagon"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/ZHmfj2z/audi.png",
+      "brand_name": "Audi"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/hZV32rM/fiat.png",
+      "brand_name": "Fiat"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/fMNTzTN/mersidis.png",
+      "brand_name": "Mercedes"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/wy4M2nk/honda.png",
+      "brand_name": "Honda"
+    }
+  ]
+  
