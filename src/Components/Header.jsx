@@ -36,7 +36,7 @@ const Header = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <h2 className="text-5xl font-bold text-orange-700">Nic <span className="text-sm text-black">Automotive</span></h2>
+                    <img src="https://i.ibb.co/HF8h5gx/car-logo.png" alt="car logo" className="h-[100px] w-[100px]" />
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
