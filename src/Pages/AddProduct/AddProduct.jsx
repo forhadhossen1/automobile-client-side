@@ -90,6 +90,8 @@ const AddProduct = () => {
                             <input type="text" name="rating" placeholder="Enter Product Rating" className="input input-bordered w-full" />
                         </label>
                     </div>
+
+                    
                 </div>
 
                 {/*deatails */}
