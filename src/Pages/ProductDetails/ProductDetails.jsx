@@ -23,7 +23,7 @@ const ProductDetails = () => {
     return (
         <div>
             <div className="">
-            {/* <Slider></Slider> */}
+            <Slider></Slider>
             </div>
             <div className="md:container md:mx-auto">
                 <h2 className="text-2xl text-center py-12 font-bold"><span className="text-orange-700">{brand_name}</span> Products</h2>
