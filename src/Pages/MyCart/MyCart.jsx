@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import MyCartCard from "./MyCartCard";
 import { useState } from "react";
+import Footer from "../../Components/Footer";
 
 const MyCart = () => {
 
@@ -19,6 +20,7 @@ const MyCart = () => {
                          ></MyCartCard> )
                 }
             </div>
+            <Footer></Footer>
         </div>
     );
 };
