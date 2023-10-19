@@ -19,10 +19,10 @@ const Header = () => {
 
     const navLinks = <>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/'>Add Cart</NavLink></li>
-        <li><NavLink  to='/'>My Card</NavLink></li>
+        <li><NavLink to='/addProduct'>Add Product</NavLink></li>
+        <li><NavLink  to='/myCart'>My Cart</NavLink></li>
         <li><NavLink  to='/signUp'>Registration</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
+        {/* <li><NavLink to='/about'>About</NavLink></li> */}
     </>
     return (
         <div className="bg-slate-300">
