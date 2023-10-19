@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const MyCartCard = ({ product }) => {
+const MyCartCard = ({ product, products, setProducts }) => {
     const { _id, name, brand, price, rating, photo } = product || {};
     const handleDelete = _id => {
         Swal.fire({
@@ -27,6 +28,9 @@ const MyCartCard = ({ product }) => {
                                 'Your file has been deleted.',
                                 'success'
                             )
+
+                            const remaining = products.filter(produc => produc._id !== _id);
+                            setProducts(remaining);
                         }
                     })
             }
@@ -37,7 +41,7 @@ const MyCartCard = ({ product }) => {
     return (
         <div>
             <div className="card card-side bg-base-100 shadow-xl">
-                <figure><img src={photo} alt="car" /></figure>
+                <figure><img src={photo} alt="car" className="h-[150px]" /></figure>
                 <div className="flex justify-between w-full p-4">
                     <div>
                         <h2 className="card-title">Name : {name}</h2>
@@ -47,9 +51,11 @@ const MyCartCard = ({ product }) => {
                     </div>
                     <div className="card-actions justify-end">
                         <div className="btn-group btn-group-vertical space-y-3">
-                            <button className="btn btn-active">view</button>
+                            {/* <button className="btn btn-active">view</button> */}
 
+                            <Link to ={`/update/${_id}`}>
                             <button className="btn">edit</button>
+                            </Link>
 
                             <button onClick={() => handleDelete(_id)}
                                 className="btn bg-orange-700">X</button>
