@@ -19,7 +19,7 @@ const Home = () => {
 
       const containerClasses = `transition-colors duration-300 ease-in-out ${
         darkMode
-          ? 'dark bg-black text-white' 
+          ? 'dark bg-black text-gray' 
           : 'bg-white text-black' 
       }`;
 
