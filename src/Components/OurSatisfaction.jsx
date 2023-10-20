@@ -2,13 +2,13 @@
 const OurSatisfaction = () => {
     return (
         <div className="py-24 md:container md:mx-auto">
-            <div className="hero min-h-[50vh]" style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
+            <div className="hero min-h-[50vh]" style={{ backgroundImage: 'url(https://i.ibb.co/82HBxLL/bm3.jpg)' }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     
                     <div className="stats stats-vertical lg:stats-horizontal shadow">
 
-                        <div className=" grid gap-10 grid-cols-1 md:grid-cols-3 bg-opacity-0">
+                        <div data-aos="zoom-in" className=" grid gap-10 grid-cols-1 md:grid-cols-3 bg-opacity-0">
 
                             <div className="stat">
                                 <div className="stat-figure text-secondary">

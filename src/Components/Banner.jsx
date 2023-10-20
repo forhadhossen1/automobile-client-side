@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Banner = () => {
   return (
@@ -7,12 +6,12 @@ const Banner = () => {
           <div className="hero" style={{ backgroundImage: 'url(https://i.ibb.co/YQZ9W3N/banner-car3.jpg)' }}>
             <div className="hero-overlay bg-opacity-30"></div>
             <div className="hero-content text-center text-neutral-content">
-              <div className="max-w-md">
+              <div  data-aos="flip-left" className="max-w-md">
                 <h1 className="mb-5 text-5xl font-extrabold">
-                  Exotic tastes at your <br />
-                  doorstep
+                  Find The Right Car <br />
+                  For You
                 </h1>
-                <p className="mb-5">We supply highly quality organic products</p>
+                <p className="mb-5">We supply highly quality products</p>
             
               </div>
             </div>
@@ -48,8 +47,8 @@ const Banner = () => {
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
                 <h1 className="mb-5 text-5xl font-extrabold">
-                  Exotic tastes at your <br />
-                  doorstep
+                  Rent Your Favorite car in <br />
+                  Easy Stem
                 </h1>
                 <p className="mb-5">We supply highly quality organic products</p>
             

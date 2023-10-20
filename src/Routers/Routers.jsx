@@ -9,6 +9,7 @@ import MyCart from "../Pages/MyCart/MyCart";
 import UpdateProduct from "../Pages/UpdateProduct/UpdateProduct";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import Details from "../Pages/Details/Details";
+import PrivetRouts from "./PrivetRouts";
 
 const router = createBrowserRouter([
     {
@@ -31,16 +32,16 @@ const router = createBrowserRouter([
         },
         {
           path : '/addProduct',
-          element : <AddProduct></AddProduct>
+          element : <PrivetRouts><AddProduct></AddProduct></PrivetRouts>
         },
         {
           path : '/myCart',
-          element : <MyCart></MyCart>,
+          element : <PrivetRouts><MyCart></MyCart></PrivetRouts>,
           loader : ()=> fetch(' https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products')
         },
         {
           path : '/update/:id',
-          element : <UpdateProduct></UpdateProduct>,
+          element : <PrivetRouts><UpdateProduct></UpdateProduct></PrivetRouts>,
           loader : ({params}) => fetch(` https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products/${params.id}`)
         },
         {
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
         },
         {
           path : '/details/:id',
-          element: <Details></Details>,
+          element: <PrivetRouts><Details></Details></PrivetRouts>,
           loader : ({params}) => fetch(` https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products/${params.id}`)
         }
       ]

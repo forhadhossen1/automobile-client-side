@@ -12,22 +12,21 @@ import { useState } from "react";
 const Home = () => {
 
     const brands = useLoaderData();
-    const [darkMode, setDarkMode] =useState(false);
+    const [darkMode, setDarkMode] = useState(false);
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
-      };
+    };
 
-      const containerClasses = `transition-colors duration-300 ease-in-out ${
-        darkMode
-          ? 'dark bg-black text-gray' 
-          : 'bg-white text-black' 
-      }`;
+    const containerClasses = `transition-colors duration-300 ease-in-out ${darkMode
+            ? 'dark bg-black text-gray'
+            : 'bg-white text-black'
+        }`;
 
     return (
         <div className={containerClasses}>
             <Banner></Banner>
             <div className="my-12">
-                <h2 className="text-4xl font-bold text-center py-12">Populer Cars From The Brands <br /> You Love</h2>
+                <h2 className="text-4xl font-bold text-center py-12"><span className="text-orange-700">Populer Cars From The Brands</span> <br /> You Love</h2>
 
                 <div className=" md:container md:mx-auto grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     {
@@ -42,12 +41,14 @@ const Home = () => {
             <Service></Service>
             <Footer></Footer>
 
-            <button
-                className="fixed bottom-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-md shadow-md"
-                onClick={toggleDarkMode}
-            >
-                {darkMode ? 'Light Mode' : 'Dark Mode'}
-            </button>
+            <div className="flexed bottom-4 right-4 flex">
+                <button
+                    className="fixed bottom-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-md shadow-md"
+                    onClick={toggleDarkMode}
+                >
+                    {darkMode ? 'Light Mode' : 'Dark Mode'}
+                </button>
+            </div>
         </div>
     );
 };
