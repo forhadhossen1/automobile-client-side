@@ -19,7 +19,7 @@ const AddProduct = () => {
 
         // send data to the server..
 
-        fetch(' https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products', {
+        fetch(' https://assignment10-automotive-server.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -59,16 +59,16 @@ const AddProduct = () => {
                         <label className="input-group">
                             {/* <input type="text" name="brand_name" placeholder="Enter product brand" className="input input-bordered w-full" /> */}
                             <select name="brand_name" className="input input-bordered w-full" >
-                            <option disabled selected>Select brand</option>
-                            <option>B M W</option>
-                            <option>Volkswagon</option>
-                            <option>Audi</option>
-                            <option>Fiat</option>
-                            <option>Mercedes</option>
-                            <option>Honda</option>
-                        </select>
+                                <option disabled selected>Select brand</option>
+                                <option>B M W</option>
+                                <option>Volkswagon</option>
+                                <option>Audi</option>
+                                <option>Fiat</option>
+                                <option>Mercedes</option>
+                                <option>Honda</option>
+                            </select>
                         </label>
-                        
+
                     </div>
                 </div>
                 {/* price */}
@@ -91,7 +91,7 @@ const AddProduct = () => {
                         </label>
                     </div>
 
-                    
+
                 </div>
 
                 {/*deatails */}

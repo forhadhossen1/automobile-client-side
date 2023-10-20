@@ -22,7 +22,7 @@ const UpdateProduct = () => {
 
         // send data to the server..
 
-        fetch(` https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products/${_id}`, {
+        fetch(` https://assignment10-automotive-server.vercel.app/products/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

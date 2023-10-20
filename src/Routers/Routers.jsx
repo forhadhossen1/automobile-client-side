@@ -37,22 +37,22 @@ const router = createBrowserRouter([
         {
           path : '/myCart',
           element : <PrivetRouts><MyCart></MyCart></PrivetRouts>,
-          loader : ()=> fetch(' https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products')
+          loader : ()=> fetch(' https://assignment10-automotive-server.vercel.app/products')
         },
         {
           path : '/update/:id',
           element : <PrivetRouts><UpdateProduct></UpdateProduct></PrivetRouts>,
-          loader : ({params}) => fetch(` https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products/${params.id}`)
+          loader : ({params}) => fetch(` https://assignment10-automotive-server.vercel.app/products/${params.id}`)
         },
         {
           path : '/product-details/:brand_name',
           element: <ProductDetails></ProductDetails>,
-          loader : () => fetch(' https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products')
+          loader : () => fetch(' https://assignment10-automotive-server.vercel.app/products')
         },
         {
           path : '/details/:id',
           element: <PrivetRouts><Details></Details></PrivetRouts>,
-          loader : ({params}) => fetch(` https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products/${params.id}`)
+          loader : ({params}) => fetch(` https://assignment10-automotive-server.vercel.app/products/${params.id}`)
         }
       ]
     },

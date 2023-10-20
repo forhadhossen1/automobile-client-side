@@ -15,5 +15,5 @@ https://assignment10-automotive.web.app/
 4. **Security**
    - Your data security is our utmost priority. My Project implements robust security measures to protect user data and maintain a secure environment. You can use our project with confidence, knowing that your information is safeguarded.
 
-5. **[Feature Name]**
-   - Describe any additional features or project highlights you'd like to include here. Feel free to add more features as needed.
+5. **Specific**
+     - Uses to buy products of his/her preferred brand, will enter the target brand and get the benefit of buying his/her preferred product from that brand.

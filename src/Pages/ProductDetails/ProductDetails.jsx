@@ -9,7 +9,7 @@ const ProductDetails = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products')
+    fetch('https://assignment10-automotive-server.vercel.app/products')
       .then(res => res.json())
       .then(data => {
         setProducts(data);

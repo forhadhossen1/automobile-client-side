@@ -16,7 +16,7 @@ const MyCartCard = ({ product, products, setProducts }) => {
             if (result.isConfirmed) {
 
 
-                fetch(` https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products/${_id}`,{
+                fetch(` https://assignment10-automotive-server.vercel.app/products/${_id}`,{
                     method : 'DELETE'
                 })
                     .then(res => res.json())
