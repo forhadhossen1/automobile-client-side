@@ -36,22 +36,22 @@ const router = createBrowserRouter([
         {
           path : '/myCart',
           element : <MyCart></MyCart>,
-          loader : ()=> fetch('http://localhost:5000/products')
+          loader : ()=> fetch(' https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products')
         },
         {
           path : '/update/:id',
           element : <UpdateProduct></UpdateProduct>,
-          loader : ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+          loader : ({params}) => fetch(` https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products/${params.id}`)
         },
         {
           path : '/product-details/:brand_name',
           element: <ProductDetails></ProductDetails>,
-          loader : () => fetch('http://localhost:5000/products')
+          loader : () => fetch(' https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products')
         },
         {
           path : '/details/:id',
           element: <Details></Details>,
-          loader : ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+          loader : ({params}) => fetch(` https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products/${params.id}`)
         }
       ]
     },

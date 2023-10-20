@@ -19,7 +19,7 @@ const AddProduct = () => {
 
         // send data to the server..
 
-        fetch('http://localhost:5000/products', {
+        fetch(' https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

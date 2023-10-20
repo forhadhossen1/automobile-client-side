@@ -16,7 +16,7 @@ const MyCartCard = ({ product, products, setProducts }) => {
             if (result.isConfirmed) {
 
 
-                fetch(`http://localhost:5000/products/${_id}`,{
+                fetch(` https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products/${_id}`,{
                     method : 'DELETE'
                 })
                     .then(res => res.json())
@@ -41,7 +41,7 @@ const MyCartCard = ({ product, products, setProducts }) => {
     return (
         <div>
             <div className="card card-side bg-base-100 shadow-xl">
-                <figure><img src={photo} alt="car" className="h-[150px]" /></figure>
+                <figure><img src={photo} alt="car" className="h-[150px] w-[200px]" /></figure>
                 <div className="flex justify-between w-full p-4">
                     <div>
                         <h2 className="card-title">Name : {name}</h2>

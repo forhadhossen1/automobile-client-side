@@ -9,7 +9,7 @@ const ProductDetails = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch(' https://assignment10-automotive-server-qsns0nahl-forhadhossen1.vercel.app/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
